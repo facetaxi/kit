@@ -204,7 +204,15 @@ if(CModule::IncludeModule("iblock")) // вывод заказов для вод�
 					 $hint=strtoupper($hint);
 					   $hint=str_replace("BERU.PHP?Z","beru.php?z",$hint);
 
-				
+					if ($seconds>=(-15*60) ) //60
+					{
+						echo $hint."</br>";
+					}
+						
+					}//while
+					
+					}//if CMODULE
+					
 
 					
 }
